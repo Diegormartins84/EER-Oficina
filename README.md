@@ -1,7 +1,7 @@
 ## Sistema de Gestão de Oficinas Mecânicas
 
-Este projeto tem como objetivo criar um sistema eficiente para gerenciar as operações de uma oficina mecânica.
-O sistema permite cadastrar clientes, veículos, mecânicos e ordens de serviço. 
+O objetivo principal do banco de dados é estruturar de forma eficiente os dados relacionados à oficina mecânica, incluindo informações sobre clientes (pessoas físicas e jurídicas), veículos, mecânicos, peças, serviços e ordens de serviço.
+O banco de dados facilita o gerenciamento das operações e oferece uma base sólida para desenvolvimento de sistemas e aplicações futuras. 
 
 **Esquema Conceitual:**
 
@@ -23,12 +23,20 @@ Detalhes como data de abertura, serviços realizados, peças utilizadas e valor 
 * Um serviço pode estar em várias OS.
 * Uma peça pode estar em várias OS.
 
+**Banco de Dados**
+
+* Clientes (PF e PJ): Estruturados para suportar clientes físicos e jurídicos, com campos e regras de integridade específicos.
+* Veículos: Associados diretamente aos clientes, permitindo que um cliente tenha múltiplos veículos registrados.
+* Mecânicos: Registro de informações sobre os profissionais responsáveis pela execução dos serviços.
+* Peças: Controle de estoque, incluindo descrição, preço e quantidade disponível.
+* Serviços: Cadastro de serviços oferecidos pela oficina, com descrição e valores.
+* Ordens de Serviço: Estrutura para registrar serviços realizados e peças utilizadas, vinculadas aos veículos e mecânicos responsáveis.
+
 **Tecnologias Utilizadas:**
 
-* Banco de dados: MySQL Workbench
+* Banco de dados: MySQL
+* Ferramentas de Desenvolvimento: MySQL Workbench
 
 **Objetivo:**
 
-O objetivo principal do sistema é automatizar os processos da oficina, desde
-o cadastro de clientes até a emissão de notas fiscais. Além disso, o sistema 
-visa otimizar a gestão de recursos, como a alocação de mecânicos para as ordens de serviço.
+O objetivo principal do sistema é automatizar os processos da oficina, desde o cadastro de clientes até a emissão de notas fiscais. Além disso, o sistema visa otimizar a gestão de recursos, como a alocação de mecânicos para as ordens de serviço.
