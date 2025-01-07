@@ -51,9 +51,9 @@ alter table Clients
 -- Criar tabela Veículo
 CREATE TABLE Veiculo (
     idVeiculo INT AUTO_INCREMENT PRIMARY KEY,
-    placa VARCHAR(10) NOT NULL UNIQUE,
-    modelo VARCHAR(100),
-    marca VARCHAR(50),
+    placa char(7) NOT NULL UNIQUE,
+    modelo VARCHAR(45),
+    marca VARCHAR(45),
     ano INT,
     idClient INT,
     FOREIGN KEY (idClient) REFERENCES Clients(idClient)
